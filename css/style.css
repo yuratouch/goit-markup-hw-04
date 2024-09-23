@@ -92,6 +92,8 @@ img {
 /* START Header styles */
 .header {
   border-bottom: 1px solid var(--accent);
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header .container {
   display: flex;
@@ -128,9 +130,10 @@ img {
   height: 4px;
   width: 100%;
   background-color: var(--pressed);
-  border-radius: 4px;
+  border-radius: 2px;
   position: absolute;
   bottom: -1px;
+  left: 0;
   transition: var(--transition-default);
   transition-property: color;
 }
@@ -236,15 +239,14 @@ img {
   max-width: 264px;
 }
 .principles-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--light);
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
-  padding: 24px 0;
   margin-bottom: 8px;
-}
-.principles-icon {
-  display: block;
-  margin: 0 auto;
+  height: 112px;
 }
 /* END Principles section styles */
 
