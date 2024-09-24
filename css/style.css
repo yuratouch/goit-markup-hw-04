@@ -336,7 +336,7 @@ img {
   padding: 40px 32px;
   background-color: var(--primary);
   transform: translateY(100%);
-  transition: transform var(--standart-transition);
+  transition: transform var(--transition-default);
 }
 .portfolio-img-overlay-text {
   color: var(--light);
@@ -351,6 +351,7 @@ img {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 .footer .logo {
   display: inline-block;
@@ -363,6 +364,8 @@ img {
   margin-right: 120px;
 }
 .social-media .text {
+  color: var(--white);
+  font-weight: var(--font-weight-medium);
   margin-bottom: 16px;
 }
 .social-media-icons {
@@ -370,16 +373,10 @@ img {
   gap: 16px;
 }
 .social-media-icon-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  background-color: var(--primary);
-  border-radius: 50%;
-  transition: background-color var(--transition-default);
 }
-.social-media-icon-wrapper:hover {
+.social-media-icon-wrapper .icon-link:hover {
   background-color: var(--success);
 }
 .social-media-icon {
