@@ -92,7 +92,7 @@ img {
 /* START Header styles */
 .header {
   border-bottom: 1px solid var(--accent);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header .container {
@@ -118,15 +118,14 @@ img {
   display: block;
   padding: 24px 0;
   position: relative;
-  transition: var(--transition-default);
-  transition-property: color;
+  transition: color var(--transition-default);
 }
-.nav-contacts {
-  font-style: normal;
+.nav-link.active {
+  color: var(--pressed);
 }
-.nav-link::after {
+.nav-link.active::after {
   content: " ";
-  display: none;
+  display: block;
   height: 4px;
   width: 100%;
   background-color: var(--pressed);
@@ -134,11 +133,13 @@ img {
   position: absolute;
   bottom: -1px;
   left: 0;
-  transition: var(--transition-default);
-  transition-property: color;
+  transition: color var(--transition-default);
 }
 .nav-link:hover::after {
   display: block;
+}
+.nav-contacts {
+  font-style: normal;
 }
 .nav-contacts-list {
   display: flex;
@@ -151,8 +152,7 @@ img {
   color: var(--text);
   display: block;
   padding: 24px 0;
-  transition: var(--transition-default);
-  transition-property: display;
+  transition: display var(--transition-default);
 }
 .nav-link:hover,
 .nav-link:active,
@@ -194,7 +194,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(./images/hero-banner-desktop.jpg);
+    url(/images/hero-banner-desktop.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -220,8 +220,7 @@ img {
   min-width: 169px;
   border-radius: 4px;
   cursor: pointer;
-  transition: var(--transition-default);
-  transition-property: background-color;
+  transition: background-color var(--transition-default);
 }
 .primary-button:hover,
 .primary-button:focus,
@@ -242,11 +241,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 114px;
   background-color: var(--light);
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
   margin-bottom: 8px;
-  height: 112px;
 }
 /* END Principles section styles */
 
@@ -284,8 +283,7 @@ img {
   height: 40px;
   background-color: var(--primary);
   border-radius: 50%;
-  transition: var(--transition-default);
-  transition-property: background-color;
+  transition: background-color var(--transition-default);
 }
 .team-card-icon-wrapper:hover {
   background-color: var(--pressed);
@@ -302,16 +300,14 @@ img {
   gap: 48px 24px;
 }
 .portfolio-card {
-  transition: var(--transition-default);
-  transition-property: box-shadow;
+  transition: box-shadow var(--transition-default);
 }
 .portfolio-card:hover {
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 1px 6px 0px #2e2f4214;
 }
 .portfolio-img-overlay {
-  transition: var(--standart-transition);
-  transition-property: transform;
+  transition: transform var(--standart-transition);
 }
 .portfolio-card:hover .portfolio-img-overlay {
   transform: translateY(0);
@@ -372,8 +368,7 @@ img {
   height: 40px;
   background-color: var(--primary);
   border-radius: 50%;
-  transition: var(--transition-default);
-  transition-property: background-color;
+  transition: background-color var(--transition-default);
 }
 .social-media-icon-wrapper:hover {
   background-color: var(--success);
