@@ -376,10 +376,11 @@ img {
   width: 40px;
   height: 40px;
 }
-.social-media-icon-wrapper .icon-link:hover {
+.social-media-icon-wrapper .icon-link:hover,
+.social-media-icon-wrapper .icon-link:focus {
   background-color: var(--success);
 }
 .social-media-icon {
-  fill: var(--white);
+  fill: var(--light);
 }
 /* END Footer styles */
