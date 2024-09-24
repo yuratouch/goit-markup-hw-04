@@ -92,7 +92,7 @@ img {
 /* START Header styles */
 .header {
   border-bottom: 1px solid var(--accent);
-  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header .container {
@@ -124,7 +124,7 @@ img {
   color: var(--pressed);
 }
 .nav-link.active::after {
-  content: " ";
+  content: "";
   display: block;
   height: 4px;
   width: 100%;
@@ -241,7 +241,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 114px;
+  height: 112px;
   background-color: var(--light);
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
